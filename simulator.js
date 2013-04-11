@@ -52,19 +52,19 @@ function singleNeuron(){
 
 	// Link sliders to simulation
 	for(var i = 0; i < parameters.length; i++){
-		document.getElementById(parameters[i]).onmouseup = sim;
+		document.getElementById(parameters[i]).onmousemove = sim;
 	}
 
-	document.getElementById("simtime").onmouseup = sim;
+	document.getElementById("simtime").onmousemove = sim;
 
-	document.getElementById("source_freq_0").onmouseup = sim;
-	document.getElementById("source_freq_1").onmouseup = sim;
+	document.getElementById("source_freq_0").onmousemove = sim;
+	document.getElementById("source_freq_1").onmousemove = sim;
 
-	document.getElementById("source_type_0").onmouseup = sim;
-	document.getElementById("source_type_1").onmouseup = sim;
+	document.getElementById("source_type_0").onmousemove = sim;
+	document.getElementById("source_type_1").onmousemove = sim;
 
-	document.getElementById("source_status_0").onmouseup = sim;
-	document.getElementById("source_status_1").onmouseup = sim;
+	document.getElementById("source_status_0").onmousemove = sim;
+	document.getElementById("source_status_1").onmousemove = sim;
 
 	document.getElementById("Time").onmouseup = temporal;
 	document.getElementById("Histogram").onmouseup = histogram;
@@ -91,7 +91,7 @@ function twoNeurons(){
 	createPlotControls();
 
 	// Link neuron select
-	document.getElementById("neuron_select").onmouseup = changeNeuron;
+	document.getElementById("neuron_select").onmousemove = changeNeuron;
 
 	// Create controls
 	createNeuronControls(active_neuron,parameters,parameters_min,parameters_max,parameters_value);
@@ -105,19 +105,19 @@ function twoNeurons(){
 
 	// Link sliders to simulation
 	for(var i = 0; i < parameters.length; i++){
-		document.getElementById(parameters[i]).onmouseup = sim;
+		document.getElementById(parameters[i]).onmousemove = sim;
 	}
 
-	document.getElementById("simtime").onmouseup = sim;
+	document.getElementById("simtime").onmousemove = sim;
 
-	document.getElementById("source_freq_0").onmouseup = sim;
-	document.getElementById("source_freq_1").onmouseup = sim;
+	document.getElementById("source_freq_0").onmousemove = sim;
+	document.getElementById("source_freq_1").onmousemove = sim;
 
-	document.getElementById("source_type_0").onmouseup = sim;
-	document.getElementById("source_type_1").onmouseup = sim;
+	document.getElementById("source_type_0").onmousemove = sim;
+	document.getElementById("source_type_1").onmousemove = sim;
 
-	document.getElementById("source_status_0").onmouseup = sim;
-	document.getElementById("source_status_1").onmouseup = sim;
+	document.getElementById("source_status_0").onmousemove = sim;
+	document.getElementById("source_status_1").onmousemove = sim;
 
 	document.getElementById("Time").onmouseup = temporal;
 	document.getElementById("Histogram").onmouseup = histogram;
